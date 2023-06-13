@@ -1,0 +1,56 @@
+@config "../tailwind.config.js";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+    font-family:"vcr";
+    src: url("../public/fonts/vcr/vcr.ttf")
+}
+
+@font-face{
+    font-family:"brat";
+    src: url("../public/fonts/brat/Brat.ttf")
+}
+@font-face{
+    font-family:"edit";
+    src: url("../public/fonts/edit_undo_line/edunline.ttf")
+}
+
+
+
+/* Mobile Classes */
+/* z-flip 380 x 880 */
+/* iPhone12 390 x 844 */
+.mobilelogotop{
+    @apply font-edit text-center text-8xl mt-36 text-synth-aqua items-end
+}
+
+.mdlogotop{
+    @apply font-edit text-center text-xxxl mt-36 text-synth-aqua items-end
+}
+
+.mobilelogobottom{
+    @apply -mt-52 font-brat block text-9xl text-right items-start  pr-2 text-synth-pink transform -rotate-12
+}
+
+.logo{
+    @apply animate-pulse
+}
+.nav{
+    @apply text-2xl text-center text-white font-vcr md:md:text-4xl
+}
+.mobilenavicon{
+   @apply w-5 h-5  text-white hidden hover:inline-block
+}
+
+.mobile{
+    @apply pt-24 bg-gray-800 h-screen
+}
+/* md:768px */
+
+
+/* lg:1024px */
+/* xl:1280px */
+/* 2xl:1536px */
